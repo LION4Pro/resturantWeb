@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <script src="jquery.js"></script>
+    <title>order</title>
+</head>
+<body>
+
+   <header>
+        <h1>resturant <span>web</span></h1><br>
+        <div class="menu-bar">
+            <img class="menupng" src="image/menu.png" alt="menu">
+            <div class="items">
+                <a href="index.php">HOME</a>
+                <a href="http://localhost/resturantweb/#menu">MENUS</a>
+                <a href="http://localhost/resturantweb/#location">LOCATIONS</a>
+                <a href="http://localhost/resturantweb/#about">ABOUT</a>
+            </div>
+        </div>
+    </header>
+
+ <form id="cart-form">
+    <section class="cart">
+        <h2>cart</h2>
+        <div class="cart-list">
+        </div>
+        <input type="text" name="total" class="cart-total"><br>
+        <div class="final">
+            <input type="text" placeholder="@you@gmail.com" disabled>
+            <input type="number" name="telephone" placeholder="Telephone">
+            <input type="text" name="address" placeholder="Address">
+
+            <button type="submit" name="send">buy</button>
+        </div>
+    </section>
+ </form>
+
+    <section class="orders">
+        <div class="filter">
+           <button class="drink">drink</button>
+           <button class="fastfood">fast foods</button>
+           <button id="food">main foods</button>
+           <button class="breakfast">breakfast</button>
+           <button class="allfoods">all</button>
+           <input  size="5" id="myInput" type="search" placeholder="Search..">
+         </div>
+         <div class="notFound">
+             <p class="found"></p>
+         </div>
+        <div class="food-item fastfood">
+        <div class="food">
+            <img src="image/8.webp" alt="PIZZA">
+            <div class="food-title">
+                <h2>PIZZA</h2>
+                <p>Delicious hand-tossed pizza with your choice of classic toppings</p>
+                <span>15$</span>
+                <button class="add-to-cart" data-name='pizza' data-price='15'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item food">
+        <div class="food">
+            <img src="image/1.webp" alt="KABAB">
+            <div class="food-title">
+                <h2>KABAB</h2>
+                <p>Juicy and flavorful kababs, marinated in Middle Eastern spices.</p>
+                <span>25$</span>
+                <button class="add-to-cart" data-name='kabab' data-price='25'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item food">
+        <div class="food">
+            <img src="image/2.webp" alt="STEAK">
+            <div class="food-title">
+                <h2>STEAK</h2>
+                <p>Mouth-watering steak, cooked to perfection and served with your choice of sides.</p>
+                <span>30$</span>
+                <button class="add-to-cart" data-name='steak' data-price='30'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item fastfood">
+        <div class="food">
+            <img src="image/3.webp" alt="HAMBURGER">
+            <div class="food-title">
+                <h2>HAMBURGER</h2>
+                <p>Classic American cheeseburger, grilled to perfection and served with all the fixings.</p>
+                <span>14$</span>
+                <button class="add-to-cart" data-name='hamburger' data-price='14'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item food">
+        <div class="food">
+            <img src="image/5.webp" alt="FISH">
+            <div class="food-title">
+                <h2>FISH</h2>
+                <p>Fresh and flavorful seafood dishes, from grilled salmon to crispy fish and chips..</p>
+                <span>18$</span>
+                <button class="add-to-cart" data-name='fish' data-price='18'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item food">
+        <div class="food">
+            <img src="image/6.webp" alt="MACARONI">
+            <div class="food-title">
+                <h2>MACARONI</h2>
+                <p>Our homemade mac & cheese will make you feel right at home.</p>
+                <span>9$</span>
+                <button class="add-to-cart" data-name='macaroni' data-price='9'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item food">
+        <div class="food">
+            <img src="image/7.webp" alt="CHICKEN">
+            <div class="food-title">
+                <h2>CHICKEN</h2>
+                <p>Savory and succulent chicken dishes, from roasted chicken to spicy wings.</p>
+                 <span>18$</span>
+                <button class="add-to-cart" data-name='chicken' data-price='18'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item drink">
+        <div class="food">
+            <img src="image/4.webp" alt="DRINK">
+            <div class="food-title">
+                <h2>BEVERAGES</h2>
+                <p>Refreshing drinks, from iced teas to cocktails and mocktails.</p>
+                 <span>1$</span>
+                <button class="add-to-cart" data-name='Beverages' data-price='1'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item drink">
+        <div class="food">
+            <img src="image/5.jpg" alt="DRINK">
+            <div class="food-title">
+                <h2>STRAWBERRY DRINK</h2>
+                <p>Refreshing drinks, from iced teas to cocktails and mocktails.</p>
+                <span>1$</span>
+                <button class="add-to-cart" data-name='strawberry drink' data-price='1'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item drink">
+        <div class="food">
+            <img src="image/6.jpg" alt="DRINK">
+            <div class="food-title">
+                <h2>PINEAPPLE DRINK</h2>
+                <p>Refreshing drinks, from iced teas to cocktails and mocktails.</p>
+                <span>3$</span>
+                <button class="add-to-cart" data-name='pineapple drink' data-price='3'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item drink">
+        <div class="food">
+            <img src="image/7.jpg" alt="DRINK">
+            <div class="food-title">
+                <h2>WATERMELON DRINK</h2>
+                <p>Refreshing drinks, from iced teas to cocktails and mocktails.</p>
+                <span>2$</span>
+                <button class="add-to-cart" data-name='watermelon drink' data-price='2'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item fastfood">
+        <div class="food">
+            <img src="image/1199.webp" alt="HOTDOG">
+            <div class="food-title">
+                <h2>HOTDOG</h2>
+                <p>Grilled hot dogs loaded with your favorite toppings, perfect for any occasion.</p>
+                <span>7$</span>
+                <button class="add-to-cart" data-name='hotdog' data-price='7'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item breakfast">
+        <div class="food">
+            <img src="image/1188.jpg" alt="BREAKFAST">
+            <div class="food-title">
+                <h2>BREAKFAST</h2>
+                <p>Hearty breakfast options, from fluffy pancakes to savory omelets.</p>
+                <span>5$</span>
+
+                <button class="add-to-cart" data-name='brakfast' data-price='5'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item breakfast">
+        <div class="food">
+            <img src="image/22.webp" alt="BREAKFAST">
+            <div class="food-title">
+                <h2>BREAKFAST</h2>
+                <p>Start your day right with our delicious breakfast items!</p>
+                <span>1$</span>
+                <button class="add-to-cart" data-name='brakfast' data-price='1'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item breakfast">
+        <div class="food">
+            <img src="image/33.jpg" alt="BREAKFAST">
+            <div class="food-title">
+                <h2>BREAKFAST</h2>
+                <p>Start your day right with our delicious breakfast items!</p>
+                <span>2$</span>
+                <button class="add-to-cart" data-name='brakfast' data-price='2'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item breakfast">
+        <div class="food">
+            <img src="image/44.jpg" alt="BREAKFAST">
+            <div class="food-title">
+                <h2>BREAKFAST</h2>
+                <p>Hearty breakfast options, from fluffy pancakes to savory omelets.</p>
+                <span>5$</span>
+                <button class="add-to-cart" data-name='brakfast' data-price='5'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item breakfast">
+        <div class="food">
+            <img src="image/55.jpg" alt="BREAKFAST">
+            <div class="food-title">
+                <h2>BREAKFAST</h2>
+                <p>Hearty breakfast options, from fluffy pancakes to savory omelets.</p>
+                <span>3$</span>
+                <button class="add-to-cart" data-name='brakfast' data-price='3'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="food-item fastfood">
+        <div class="food">
+            <img src="image/1177.jpg" alt="SANDWICH">
+            <div class="food-title">
+                <h2>SANDWICH</h2>
+                <p>Delicious sandwiches made with fresh bread, quality meats and cheeses, and your favorite fixings.</p>
+                <span>6$</span>
+                <button class="add-to-cart" data-name='sandwich' data-price='6'>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="order.js"></script>
+</body>
+</html>
+
