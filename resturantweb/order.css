@@ -1,0 +1,282 @@
+* {
+
+    margin: 0;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+.customscroll {
+
+    background-color: #ED6A5A;
+    transition: 0.5s;
+    height: 3px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#myInput {
+
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+header {
+
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+header > h1 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #454545;
+    letter-spacing: 0.1em;
+}
+
+header > h1 > span {
+
+    color: #ED6A5A;
+}
+
+header nav a {
+
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    color: #454545;
+    position: relative;
+}
+
+header nav a::after {
+
+    content: "" ;
+    width: 0px;
+    position: absolute;
+    left: 0;
+    border-bottom: 1px solid #ED6A5A;
+    display: block;
+    transition: 0.7s;
+}
+
+header nav a:hover:after {
+
+    width: 100%;
+}
+
+.filter {
+
+    display: flex;
+}
+
+.filter button {
+
+    color: #454545;
+}
+
+.filter button:focus {
+
+    border-bottom: 2px solid #ED6A5A;
+}
+
+.filter button {
+
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.orders {
+
+    width: 600px;
+    text-align: right;
+    position: relative;
+    overflow: auto;
+    margin: 150px auto auto;
+}
+
+.orders .food {
+
+    display: flex;
+    align-items: center;
+}
+
+.orders .food img {
+
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.orders .food .food-title {
+
+  margin-left: 100px;
+}
+
+.food-title span {
+
+    position: absolute;
+    left: 80%;
+    background-color: #454545;
+    color: #e0e0e0;
+    width: 30px;
+    padding: 2px;
+    text-align: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.orders .food button {
+
+    border: none;
+    padding: 5px;
+    background-color: #ED6A5A;
+    color: white;
+    margin-top: 8px;
+    float: right;
+    border-radius: 5px;
+}
+
+.orders .food h2 {
+
+    color: #454545;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.removeItem {
+
+    width: 10%;
+    left: 0%;
+    position: relative;
+}
+
+select {
+
+    border: none;
+    outline: none;
+}
+
+option:checked {
+
+    background-color: #e0e0e0;
+    color: white;
+}
+
+.cart {
+
+    border: 1px solid #e0e0e0;
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+    display: none;
+    padding: 2px;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.cart .cart-list input {
+
+    border: none;
+    outline: none;
+}
+
+.cart h2 {
+
+    color: #ED6A5A;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.cart .cart-total {
+
+    border: none;
+    outline: none;
+    background-color: #ED6A5A;
+    width: 50px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.cart .cart-list {
+
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.final input {
+
+    color: #454545;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    background: none;
+    border-bottom: 1px solid #ED6A5A;
+}
+
+.final button {
+
+    color: #454545;
+    margin-top: 4px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+header nav a {
+
+    display: none;
+}
+
+.menu-bar {
+
+    display: block;
+}
+
+.items {
+
+    display: none;
+}
+
+.items a {
+
+    display: block;
+    text-decoration: none;
+    color: #454545;
+    margin: 5px;
+}
+
+@media screen and (max-width:600px) {
+
+    .orders {
+
+        width: min-content;
+    }
+
+    .cart {
+
+        position: absolute;
+        top: 100%;
+
+    }
+}

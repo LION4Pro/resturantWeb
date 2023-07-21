@@ -1,0 +1,51 @@
+form {
+
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+}
+
+form .login {
+
+    direction: rtl;
+    text-align: left;
+}
+
+form .login input {
+
+    border: none;
+    outline: none;
+    margin: 10px;
+    text-align: center;
+    margin-left: 100px;
+    width: 150px;
+    border-bottom: 2px solid lightblue;
+    display: block;
+}
+
+.login a {
+
+    text-decoration: none;
+    color: #337ab7;
+    font-weight: bold;
+}
+
+form .login button {
+
+    border: none;
+    padding: 10px;
+    color: white;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+form svg {
+
+    position: absolute;
+    top: -10%;
+    left: 65%;
+    transform: translate(-50% , -50%);
+}
